@@ -93,32 +93,32 @@ files:
 - name: src/games/game2048/Game2048.kt
   visible: true
   placeholders:
-  - offset: 1227
-    length: 6
+  - offset: 1247
+    length: 190
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 1227
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
-  - offset: 1705
-    length: 6
+  - offset: 1904
+    length: 437
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 1705
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
-  - offset: 2052
-    length: 6
+  - offset: 2682
+    length: 492
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 2052
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |-
     package games.game2048
@@ -193,14 +193,14 @@ files:
 - name: src/games/game2048/Game2048Helper.kt
   visible: true
   placeholders:
-  - offset: 730
-    length: 6
+  - offset: 720
+    length: 282
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 730
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |+
     package games.game2048
@@ -230,13 +230,13 @@ files:
   visible: true
   placeholders:
   - offset: 820
-    length: 6
+    length: 193
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 820
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |-
     package games.game2048

@@ -23,6 +23,8 @@ object RandomGame2048Initializer: Game2048Initializer<Int> {
      * If the board is full return null.
      */
     override fun nextValue(board: GameBoard<Int?>): Pair<Cell, Int>? {
-        TODO()
+        val cells = board.getAllCells().filter { board[it] == null}.toList()
+        return if(cells.isEmpty()) null
+        else cells[(cells.indices).shuffled().first()] to generateRandomStartValue()
     }
 }

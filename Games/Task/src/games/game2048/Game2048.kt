@@ -2,6 +2,7 @@ package games.game2048
 
 import board.Cell
 import board.Direction
+import board.Direction.*
 import board.GameBoard
 import board.createGameBoard
 import games.game.Game
@@ -41,7 +42,13 @@ class Game2048(private val initializer: Game2048Initializer<Int>) : Game {
  * Add a new value produced by 'initializer' to a specified cell in a board.
  */
 fun GameBoard<Int?>.addNewValue(initializer: Game2048Initializer<Int>) {
-    TODO()
+    val pair = initializer.nextValue(this)
+    pair?.let {
+        this.getAllCells()
+                .filter { it == pair.first }
+                .forEach { this[it] = pair.second }
+
+    }
 }
 
 /*
@@ -53,7 +60,19 @@ fun GameBoard<Int?>.addNewValue(initializer: Game2048Initializer<Int>) {
  * Return 'true' if the values were moved and 'false' otherwise.
  */
 fun GameBoard<Int?>.moveValuesInRowOrColumn(rowOrColumn: List<Cell>): Boolean {
-    TODO()
+    var moved = false
+    val updated = rowOrColumn.mapNotNull { this[it] }.moveAndMergeEqual { it * 2 }
+
+    if (updated.isNotEmpty()) {
+        updated.forEachIndexed { index, value ->
+            if (this[rowOrColumn[index]] != value) {
+                this[rowOrColumn[index]] = value
+                moved = true
+            }
+        }
+        for (i in updated.size until width) this[rowOrColumn[i]] = null
+    }
+    return moved
 }
 
 /*
@@ -64,5 +83,12 @@ fun GameBoard<Int?>.moveValuesInRowOrColumn(rowOrColumn: List<Cell>): Boolean {
  * Return 'true' if the values were moved and 'false' otherwise.
  */
 fun GameBoard<Int?>.moveValues(direction: Direction): Boolean {
-    TODO()
+    var moved = false
+    when (direction) {
+        UP -> for (c in 1..width) moved = moved or moveValuesInRowOrColumn(this.getColumn(1..width, c))
+        DOWN -> for (c in 1..width) moved = moved or moveValuesInRowOrColumn(this.getColumn(width downTo 1, c))
+        RIGHT -> for (r in 1..width) moved = moved or moveValuesInRowOrColumn(this.getRow(r, width downTo 1))
+        LEFT -> for (r in 1..width) moved = moved or moveValuesInRowOrColumn(this.getRow(r, 1..width))
+    }
+    return moved
 }
