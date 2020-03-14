@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c7d135f-19c1-4471-b463-b4200692e55a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/Task/src/games/game2048/Game2048.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Games/Task/src/games/game2048/Game2048.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/Task/src/games/game2048/Game2048Helper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Games/Task/src/games/game2048/Game2048Helper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/Task/src/games/game2048/Game2048Initializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Games/Task/src/games/game2048/Game2048Initializer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Games/Task/src/games/gameOfFifteen/GameOfFifteen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Games/Task/src/games/gameOfFifteen/GameOfFifteen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Games/Task/src/games/gameOfFifteen/GameOfFifteenHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Games/Task/src/games/gameOfFifteen/GameOfFifteenHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Games/Task/src/games/gameOfFifteen/GameOfFifteenInitializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Games/Task/src/games/gameOfFifteen/GameOfFifteenInitializer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Games/Task/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Games/Task/task-info.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +25,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,13 +50,53 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="show.inlinked.gradle.project.popup" value="false" />
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'games.game2048'">
-    <configuration name="TestGame2048" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Tests in 'games.gameOfFifteen'">
+    <configuration name="TestGameOfFifteen" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;games.game2048.TestGame2048&quot;" />
+        <option name="scriptParameters" value="--tests &quot;games.gameOfFifteen.TestGameOfFifteen&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":Games-Task:cleanTest" />
+            <option value=":Games-Task:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestGameOfFifteenHelper" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;games.gameOfFifteen.TestGameOfFifteenHelper&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":Games-Task:cleanTest" />
+            <option value=":Games-Task:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestGameOfFifteenInitializer" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;games.gameOfFifteen.TestGameOfFifteenInitializer&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -80,10 +131,33 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Tests in 'games.gameOfFifteen'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;games.gameOfFifteen.*&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":Games-Task:cleanTest" />
+            <option value=":Games-Task:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'games.gameOfFifteen'" />
         <item itemvalue="Gradle.Tests in 'games.game2048'" />
-        <item itemvalue="Gradle.TestGame2048" />
+        <item itemvalue="Gradle.TestGameOfFifteenInitializer" />
+        <item itemvalue="Gradle.TestGameOfFifteenHelper" />
+        <item itemvalue="Gradle.TestGameOfFifteen" />
       </list>
     </recent_temporary>
   </component>
@@ -98,25 +172,45 @@
       <option name="presentableId" value="Default" />
       <updated>1582057500860</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finish implementation of Game2048">
+      <created>1582144197244</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582144197244</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finish implementation of Game2048" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish implementation of Game2048" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1320" height="184" key="GridCell.Tab.0.bottom" timestamp="1582144148558">
+    <state x="286" y="0" width="783" height="766" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582147612938">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1320" height="184" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1582144148558" />
-    <state width="1320" height="184" key="GridCell.Tab.0.center" timestamp="1582144148556">
+    <state x="286" y="0" width="783" height="766" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1582147612938" />
+    <state x="160" y="0" width="1036" height="766" key="CommitChangelistDialog2" timestamp="1582144196431">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1320" height="184" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1582144148556" />
-    <state width="1320" height="184" key="GridCell.Tab.0.left" timestamp="1582144148555">
+    <state x="160" y="0" width="1036" height="766" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1582144196431" />
+    <state width="1320" height="184" key="GridCell.Tab.0.bottom" timestamp="1582234598020">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1320" height="184" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1582144148555" />
-    <state width="1320" height="184" key="GridCell.Tab.0.right" timestamp="1582144148557">
+    <state width="1320" height="184" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1582234598020" />
+    <state width="1320" height="184" key="GridCell.Tab.0.center" timestamp="1582234598020">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1320" height="184" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1582144148557" />
+    <state width="1320" height="184" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1582234598020" />
+    <state width="1320" height="184" key="GridCell.Tab.0.left" timestamp="1582234598020">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1320" height="184" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1582234598020" />
+    <state width="1320" height="184" key="GridCell.Tab.0.right" timestamp="1582234598020">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1320" height="184" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1582234598020" />
     <state width="1320" height="230" key="GridCell.Tab.1.bottom" timestamp="1582142691715">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

@@ -268,45 +268,17 @@ files:
         }
     }
   learner_created: false
-- name: src/games/gameOfFifteen/GameOfFifteen.kt
-  visible: true
-  placeholders:
-  - offset: 385
-    length: 6
-    placeholder_text: TODO()
-    initial_state:
-      length: 6
-      offset: 385
-    initialized_from_dependency: false
-    selected: false
-    status: Unchecked
-  text: |+
-    package games.gameOfFifteen
-
-    import board.Direction
-    import board.GameBoard
-    import board.createGameBoard
-    import games.game.Game
-
-    /*
-     * Implement the Game of Fifteen (https://en.wikipedia.org/wiki/15_puzzle).
-     * When you finish, you can play the game by executing 'PlayGameOfFifteen'.
-     */
-    fun newGameOfFifteen(initializer: GameOfFifteenInitializer = RandomGameInitializer()): Game =
-        TODO()
-
-  learner_created: false
 - name: src/games/gameOfFifteen/GameOfFifteenHelper.kt
   visible: true
   placeholders:
-  - offset: 480
-    length: 6
+  - offset: 474
+    length: 272
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 480
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |-
     package games.gameOfFifteen
@@ -328,14 +300,14 @@ files:
 - name: src/games/gameOfFifteen/GameOfFifteenInitializer.kt
   visible: true
   placeholders:
-  - offset: 576
-    length: 6
+  - offset: 621
+    length: 158
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 576
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |+
     package games.gameOfFifteen
@@ -1607,6 +1579,34 @@ files:
   learner_created: false
 - name: assignmentKey
   visible: false
+  learner_created: false
+- name: src/games/gameOfFifteen/GameOfFifteen.kt
+  visible: true
+  placeholders:
+  - offset: 358
+    length: 26
+    placeholder_text: TODO()
+    initial_state:
+      length: 6
+      offset: 385
+    initialized_from_dependency: false
+    selected: true
+    status: Unchecked
+  text: |+
+    package games.gameOfFifteen
+
+    import board.Direction
+    import board.GameBoard
+    import board.createGameBoard
+    import games.game.Game
+
+    /*
+     * Implement the Game of Fifteen (https://en.wikipedia.org/wiki/15_puzzle).
+     * When you finish, you can play the game by executing 'PlayGameOfFifteen'.
+     */
+    fun newGameOfFifteen(initializer: GameOfFifteenInitializer = RandomGameInitializer()): Game =
+        TODO()
+
   learner_created: false
 feedback_link: https://www.coursera.org/learn/kotlin-for-java-developers/programming/NSid0/game-2048-game-of-fifteen/discussions
 status: Unchecked
